@@ -50,3 +50,10 @@ io.on("connection", (socket) => {
     }
   });
 });
+
+
+app.get("/",(req)=> {
+  res.status(200).json({
+    message:"Your Server is Running"
+  })
+})
